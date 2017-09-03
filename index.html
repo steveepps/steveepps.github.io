@@ -1,108 +1,88 @@
-<!DOCTYPE HTML>
-<!--Free for personal and commercial use under the CCA 3.0 license-->
-<html>
-	<head>
-		<title>Portfolio - Steve Epps</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>My Portfolio</strong></a>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
-								</header>
-
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-
-										<header>
-											<h2>hello world</h2>
-											<p>2017-04-21</p>
-										</header>
-											<p>Initial commit. This portfolio contains links to digital maps, flat maps, photography sets, code, and music. Click on the links on the Menu to the left to check out past and current works. Contact information at the bottom of this page. Stay tuned.</p>
-										<ul class="actions">
-											<li><a href="https://github.com/steveepps" class="button big">My GitHub</a></li>
-										</ul>
-
-									</div>
-								</section>
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li>
-											<span class="opener">Maps</span>
-											<ul>
-												<li><a href="html/flatmaps.html">Flat-file Maps</a></li>
-												<li><a href="html/digitalmaps.html">Digital Maps</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Photographs</span>
-											<ul>
-												<li><a href="html/bandw.html">Black and White</a></li>
-												<li><a href="html/color.html">Color</a></li>
-											</ul>
-										</li>
-										<li><a href="html/code.html">Code</a></li>
-										<li><a href="html/music.html">Music</a></li>
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Contact</h2>
-									</header>
-									<ul class="contact">
-										<li class="fa-envelope-o"><a href="mailto:steveepps00@gmail.com">steveepps00@gmail.com</a></li>
-										<li class="fa-home"><a href="https://www.steveepps.me">steveepps.me</a></li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy;All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a> (modified).</p>
-								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="favicon.jpg">
+<script>
+  function startTime() {
+    var today = new Date();
+    var s = today.getSeconds();
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        s;
+    var t = setTimeout(startTime, 50);
+  }
+  function checkTime(i) {
+    if (i < 100) {i = "0" + i};
+    return Date.now();
+  }
+</script>
+<title>Steve Epps // steveepps.me</title>
+  <style>
+    .main_style {
+      position:absolute; 
+      left:5000px;
+    }
+    header, .full-width {
+      width: 100%;
+      background: black;
+    }
+    .wrap {
+      width: 100%;
+      text-align: left;
+      margin: 10 auto;
+      padding: 0.25em 0.625em;
+    }
+    .fix_left{
+      position:fixed;
+      bottom:0px;
+      left:0%;
+    }
+    .fix_middle{
+      position: absolute;
+      left: 100%;
+      float: left;
+      bottom: 0px;
+    }
+  </style>
+</head>
+<header>
+  <div class="wrap">
+    <h1><font color="white">steveepps.me</font></h1>
+  </div>
+</header>
+<div id='container'>
+<p></p>
+  <h3>// about</h3>
+    <ul>
+      <li><b>2016 - Present</b>: I work with <a href="http://www.mapzen.com/">Mapzen</a> in San Francisco to maintain and update data in the <a href="http://whosonfirst.mapzen.com/">Who's On First</a> gazetteer.</li>
+      <li><b>2015 - 2016</b>: GIS work with the Maps team at Apple, Inc.</li>
+      <li><b>2014 - 2016</b>: Contracted with <a href="http://www.mobilityplanners.com/">Mobility Planners</a> to create maps and synthesize demographics for various municipal plans in California, Arizona, and Texas.</li>
+      <li><b>2014 - 2015</b>: Market Analyst for <a href="http://dtz.cassidyturley.com/">DTZ/Cassidy Turley, Inc</a>. Analyzed real estate market trends and sales for Northern California markets. </li>
+      <li><b>2013</b>: Graduated from San Jose State University with an M.U.P. in <a href="https://www.sjsu.edu/urbanplanning/">Urban and Regional Planning</a>.</li>
+      <li><b>2011 - 2012</b>: GIS Contractor for the <a href="https://www.sccgov.org/sites/scc/Documents/home.html">County of Santa Clara, CA</a>. Projects included natural resource data collection, green building data management, and parcel mapping.</li>
+      <li><b>2010</b>: Graduated from San Francisco State University with a B.A. in <a href="https://dusp.sfsu.edu">Urban Studies</a>.</li>
+    </ul>
+<p></p>
+  <h3>// projects</h3>
+    <ul>
+      <li><b>Who's On First</b> @ Mapzen: <a href="https://github.com/whosonfirst-data/whosonfirst-data">github</a>.</li>
+      <li><b>Blog posts</b> @ Mapzen: <a href="https://mapzen.com/blog/sf-neighbourhood-updates/">neighbourhoods</a>, <a href="https://mapzen.com/blog/wof-lifecycle-documentation/">lifecycle docs</a>, <a href="https://mapzen.com/blog/mesoshapes/">county coverage</a>, <a href="https://mapzen.com/blog/bundler/">bundler</a>, <a href="https://mapzen.com/blog/neighbourhood-updates-two/">neighbourhoods II</a>, <a href="https://mapzen.com/blog/tackling-space-and-time-in-whosonfirst/">space/time</a>, <a href="https://mapzen.com/blog/summer-2017-wof/">names</a>.</li>
+      <li><b>Electron</b> Application w/ Who's On First: <a href="http://www.google.com/">github</a> (<a href="http://www.google.com/">download</a>).</li>
+      <li>Transportation <b>Statistics & Maps</b> @ Mobility Planners: <a href="http://www.mobilityplanners.com/wp-content/uploads/2017/02/JTNP-Transit-Business-Plan-Final-Report-4-28-16-2-sided-copying.pdf">joshua tree national park</a>, <a href="http://docs.graham.az.gov/ACC/Departments/BOS/BOSDocs/GCTransitFeasibilityStudyFinalReport4-2016.pdf">graham county</a>, <a href="http://www.mobilityplanners.com/wp-content/uploads/2017/03/Calaveras-Transit-Short-Range-Transit-Plan-Final-January-2016-for-printing.pdf">calaveras county</a>.</li>
+      <li>Market Snapshots and <b>Publications</b> @ DTZ/Cassidy Turley: <a href="http://dtz.cassidyturley.com/DesktopModules/CassidyTurley/Download/Download.ashx?contentId=3973&fileName=San+Mateo+County+Office+Market+Snapshot+Q4+2014.pdf">1</a>, <a href="http://dtz.cassidyturley.com/DesktopModules/CassidyTurley/Download/Download.ashx?contentId=3803&fileName=San+Mateo+County+Office+Market+Snapshot+Q3-2014.pdf">2</a>, <a href="http://dtz.cassidyturley.com/DesktopModules/CassidyTurley/Download/Download.ashx?contentId=3805&fileName=Bay+Area+Manufacturing+Market+Snapshot+Q3-2014.pdf">3</a>, <a href="http://dtz.cassidyturley.com/DesktopModules/CassidyTurley/Download/Download.ashx?contentId=3974&fileName=San+Mateo+County+Industrial+Market+Snapshot+Q4+2014.pdf">4</a>.</li>
+      <li><b>Photography</b>: <a href="http://www.google.com/">black and white</a>, <a href="http://www.google.com/">color</a>.</li>
+    </ul>
+<p></p>
+  <h3>// contact</h3>
+    <ul>
+      <li><b><a href="https://github.com/stepps00">github</a></b>.</li>
+      <li><b><a href="https://twitter.com/stepps00">twitter</a></b>.</li>
+      <li><b><a href="https://www.google.com/">linkedin</a></b>.</li>
+    </ul>
+</body>
+  <div class="fix_left">
+    <body onload="startTime()"><div id="txt"></div>
+  </div>
+  <div style="display: bottom; justify-content: center;">
+  </div>
+</div>
